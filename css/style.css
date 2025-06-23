@@ -778,7 +778,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .skill_icon {
     margin: 0px 5px 0px 0px;
 }
-.bg-image {
+/*.bg-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -790,6 +790,21 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     background-image: url(../images/bg.png);
     animation: .5s imgfade forwards;
     animation-delay: .5s;
+}*/
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw; /* Covers left half of viewport */
+  height: 100vh;
+  background-image: url(../images/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000; /* or use your gradient background if needed */
+  z-index: 1;
+  animation: imgfade 0.5s forwards;
+  animation-delay: 0.5s;
 }
 .sm-bg-image {
     display: none;
